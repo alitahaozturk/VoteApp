@@ -59,7 +59,7 @@ namespace VoteApp
             //    appId: "",
             //    appSecret: "");
 
-            //app.UseGoogleAuthentication();
+            app.UseGoogleAuthentication();
         }
     }
 }
