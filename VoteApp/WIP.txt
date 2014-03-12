@@ -28,13 +28,19 @@
   - IsValid
 
 
-  # TODO
+  # WORK ITEMS
+
+  ## Security
+  [ ] Bug: Everyone can do all actions with default controllers.
+        Fix --> Only users who created polls can edit/delete them. users can't be edited. votes non editable.
+		Admin mode? --> can have access to everything. might be needed for test.
 
   ## P1s
-  
-  [ ] Data Model
-  [ ] Views
-  [ ] 
+  [x] Data Model
+  [x] Contollers/Views
+  [ ] Administrator view
+  [ ] Non-logged in view
+  [ ] Issue: Different top bars on Home vs other pages. Why?
 
   ## P2 ideas
 
