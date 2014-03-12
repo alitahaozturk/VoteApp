@@ -208,8 +208,23 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201403120853357_InitialCreate.cs" />
+    <Compile Include="Migrations\201403120853357_InitialCreate.Designer.cs">
+      <DependentUpon>201403120853357_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201403120858041_mig1.cs" />
+    <Compile Include="Migrations\201403120858041_mig1.Designer.cs">
+      <DependentUpon>201403120858041_mig1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201403120931056_mig2.cs" />
+    <Compile Include="Migrations\201403120931056_mig2.Designer.cs">
+      <DependentUpon>201403120931056_mig2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountBindingModels.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\DataModel.cs" />
+    <Compile Include="Models\TestSeeder.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Providers\ApplicationOAuthProvider.cs" />
     <Compile Include="Results\ChallengeResult.cs" />
@@ -224,6 +239,7 @@
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
+    <Content Include="WIP.txt" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Areas\HelpPage\Views\Web.config" />
@@ -290,6 +306,17 @@
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="packages.config" />
     <None Include="Project_Readme.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201403120853357_InitialCreate.resx">
+      <DependentUpon>201403120853357_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201403120858041_mig1.resx">
+      <DependentUpon>201403120858041_mig1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201403120931056_mig2.resx">
+      <DependentUpon>201403120931056_mig2.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

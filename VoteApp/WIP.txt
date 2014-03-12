@@ -1,0 +1,42 @@
+﻿# DESIGN
+
+## Data model
+
+### Poll
+ - PollId
+ - UserId
+ - Name
+ - Description
+ - LastVoteDate
+ - IsHidden
+
+### Option
+ - OptionId
+ - PollId
+ - Value
+
+ ### User
+ - UserId
+ - FullName
+ - Bio
+
+ ### Vote
+  - PollId
+  - UserId
+  - OptionId
+  - VoteDate
+  - IsValid
+
+
+  # TODO
+
+  ## P1s
+  
+  [ ] Data Model
+  [ ] Views
+  [ ] 
+
+  ## P2 ideas
+
+  - Use claims or similar mechanism to allow only certain users to vote.
+    -- users can be allowed to vote by using one-time codes to join a poll, for example.
